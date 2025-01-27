@@ -1,18 +1,18 @@
-import java.util.*;
-public class Main{
-        public static void main(String[] args) {
-            int answer;
-            Scanner in=new Scanner(System.in);
-            System.out.println("Enter a number  :  ");
-            int n=in.nextInt();
-            int s=0;
-            int rem;
-            while(n!=0){
-                rem=n%10;
-                s=s*10+rem;
-                n=n/10;
-            
+
+class Main {
+    public static void main(String[] args) {
+      
+        String s = "PRANESHWAR   S   H   "; 
+        String r = "";
+        char ch;
+
+        for (int i = 0; i < s.length(); i++) {
+
+            ch = s.charAt(i);
+ 
+            r = ch + r; 
         }
-        System.out.println("reversed number is  :  "+s);
-        }
+      
+        System.out.println(r);
+    }
 }
